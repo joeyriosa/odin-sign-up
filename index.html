@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- https://unsplash.com/@declansun -->
+</head>
+<body>
+    <div class="container">
+        <div class="left-pane">
+            <div class="logo-line">
+                <img class="logo-image" src="./images/odin-lined.png" alt="Odin image">
+                <div class="logo-text">Odin</div>
+            </div>
+            <div class="logo-attribution">
+                Photo by <a href="https://unsplash.com/@declansun">Declan Sun</a> on <a href="https://unsplash.com">Unsplash</a>
+            </div>
+        </div>
+        <div class="right-pane">
+            <div class="right-pane-text">
+                <div>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                </div>
+                <div>
+                    Sign up <span class="italicized">now</span> to get started.
+                </div>
+            </div>
+            <div class="right-pane-text">
+                You <span class="italicized">know</span> you want to.
+            </div>
+            <form class="form-container" novalidate>
+                <div class="form-header">Let's do this!</div>
+                <div class="form-field-container">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <span></span>
+                </div>
+                <div class="form-field-container">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <span></span>
+                </div>
+                <div class="form-field-container">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                    <span></span>
+                </div>
+                <div class="form-field-container">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-field-container">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                    <span></span>
+                    <p class="error" id="error-password"></p>
+                </div>
+                <div class="form-field-container">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span></span>
+                    <p class="error" id="error-confirm-password"></p>
+                </div>
+            </form>
+            <div><button id="submitButton" type="submit">Create Account</button></div>
+            <div class="footer-text">
+                Already have an account?
+                <a id="loginLink" href="">Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/validation.js"></script>
+</body>
+</html>

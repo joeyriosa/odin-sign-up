@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("../styles/Norse-Bold.otf") format("woff2");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.left-pane {
+    position: relative;
+    background-image: url("../images/stairs.jpg");
+    width: 35%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo-line {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 0;
+    padding: 20px 0;
+    background-color: rgb(128,128,128, 0.5);
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo-image {
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.logo-text {
+    font-family: "Norse-Bold";
+    color: white;
+    font-size: 6rem;
+    padding: 0px 20px;
+}
+
+.logo-attribution {
+    color: white;
+    font-size: 1em;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.logo-attribution a {
+    color: white;
+}
+
+.right-pane {
+    width: 65%;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.italicized {
+    font-style: italic;
+}
+
+.right-pane-text {
+    font-size: 1.6rem;
+    margin: 15px 50px;
+}
+
+.form-container {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.form-header {
+    font-size: 1.75rem;
+    margin: 15px 50px 10px 50px;
+    width: 100%;
+}
+
+.form-field-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 5px 50px;
+}
+
+label {
+    font-size: 1.1rem;
+    color: rgb(88, 88, 88);
+    padding: 5px 0;
+}
+
+input {
+    outline: none;
+    font-size: 1.2rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 6px;
+    width: 250px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input + span {
+    position: relative;
+}
+
+/* Generated content. Shows "required" on top of text box */
+input:invalid + span::before {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: rgb(158, 6, 6);
+    padding: 5px 10px;
+    top: -62px;
+    left: 200px;
+}
+
+.error {
+    font-size: 0.75em;
+    margin: 3px 0px 0px 0px;
+    color: red;
+}
+
+button {
+    background-color: #596D48;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+#submitButton {
+    margin: 10px 50px;
+}
+
+button:hover {
+    background-color: #4D5E3E;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+    margin: 15px 50px;
+}
+
+#loginLink {
+    color: #4D5E3E;
+    text-decoration: none;
+}
+
+#loginLink:hover {
+    text-decoration: underline;
+}
